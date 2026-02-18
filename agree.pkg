@@ -1,0 +1,16 @@
+v 3
+d agree.  Agreement: Bland-Altman & Passing-Bablok methods.
+d After installation, see help agree.
+d
+d (c)JM. Domenech
+d Programmer: R. Sesma
+d Laboratori d'Estadística Aplicada i Modelització, Universitat Autònoma de Barcelona.
+d
+d Distribution-Date: 18feb2026
+d Version 1.2.5 (18feb2026)
+d
+d E-mail: metodo.campus@gmail.com
+f ado/agree.ado
+f sthlp/agree.sthlp
+f dlg/agree.dlg
+f dta/agree_data.dta
