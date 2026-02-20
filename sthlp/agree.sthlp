@@ -1,5 +1,5 @@
 {smcl}
-{* *! version 1.2.5 18feb2026}{...}
+{* *! version 1.2.4 15dec2022}{...}
 {viewerdialog agree "dialog agree"}{...}
 {viewerjumpto "Syntax" "agree##syntax"}{...}
 {viewerjumpto "Description" "agree##description"}{...}
@@ -144,7 +144,7 @@ metodo.campus@gmail.com{break}
 
 {p 4 6 2}
 Dom{c e'}nech JM. Passing-Bablok & Bland-Altman methods: User-written command agree for Stata [computer program].{break}
-V1.2.5. Bellaterra: Universitat Aut{c o'g}noma de Barcelona; 2026.{break}
+V1.2.4. Bellaterra: Universitat Aut{c o'g}noma de Barcelona; 2022.{break}
 Available executing from Stata: {break}
 net install agree, from("https://raw.githubusercontent.com/metodo-leam/stata-leam/master/"){p_end}
 

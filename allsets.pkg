@@ -1,0 +1,20 @@
+v 3
+d allsets.  All Possible Subsets: linear, logistic, Cox & competing-risks regression.
+d After installation, see help allsets.
+d
+d (c)JM. Domenech, JB. Navarro
+d Programmer: R. Sesma
+d Laboratori d'Estadistica Aplicada, Universitat Autonoma de Barcelona.
+d
+d Distribution-Date: 26jun2025
+d Version 1.3.6 (26jun2025)
+d
+d E-mail: metodo.campus@gmail.com
+f ado/allsets.ado
+f sthlp/allsets.sthlp
+f dlg/allsets.dlg
+f dta/allsets_linear.dta
+f dta/allsets_logistic.dta
+f dta/allsets_cox.dta
+f dta/allsets_cox_vdt.dta
+f dta/allsets_finegray.dta
