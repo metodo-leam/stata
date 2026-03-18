@@ -1,4 +1,4 @@
-*! version 1.0.6  15dec2022 JM. Domenech, R. Sesma
+*! version 1.0.7  18mar2026 JM. Domenech, R. Sesma
 /*
 rndseq: Generation of Random Sequences
 */
@@ -350,36 +350,23 @@ program define creadic
 end
 
 program define parsedata, rclass
-	syntax anything, m(string) [prob(numlist)]
+	syntax anything(name=n), m(string) [prob(numlist)]
 
-	local n = `anything'
-	
-	local error 0
+	// build probability matrix
 	if ("`prob'"!="") {
-		//prob contains the probabilities
-		local i 0
-		local sum 0
-		foreach p in `prob' {
-			local ++i
-			if (`i'>`n') {
-				local error 1
-				continue, break			//Error
-			}
-			
-			matrix `m'[1,`i'] = `p'
-			local sum = `sum' + `p'
-		}
+		// prob contains the probabilities
+		local p = subinstr("`prob'"," ",", ",.)
+		matrix `m' = (`p')
 	}
 	else {
-		//Default: each item has the same probability
-		foreach i of numlist 1/`n' {
-			matrix `m'[1,`i'] = 1/`n'
-		}
-		local sum 1
+		// default: each item has the same probability
+		matrix `m' = J(1,`n',1/`n')
 	}
+	// sum of probabilities
+	mata : st_local("s", strofreal(sum(st_matrix("`m'"))))
 	
-	return scalar error = `error'
-	return scalar sum = `sum'
+	return scalar error = (colsof(`m')!=`n')
+	return scalar sum = `s'
 end
 
 program define print_error

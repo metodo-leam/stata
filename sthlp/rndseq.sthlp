@@ -1,5 +1,5 @@
 {smcl}
-{* *! version 1.0.6 15dec2022}{...}
+{* *! version 1.0.7 18mar2026}{...}
 {viewerdialog rndseq "dialog rndseq"}{...}
 {viewerjumpto "Syntax" "rndseq##syntax"}{...}
 {viewerjumpto "Description" "rndseq##description"}{...}
@@ -117,7 +117,7 @@ Execute {cmd: net install rndseq, from("https://raw.githubusercontent.com/metodo
 {title:Version}
 
 {p 4}
-Version 1.0.6 {hline 2} 15 December 2022
+Version 1.0.7 {hline 2} 18 March 2026
 
 
 {marker authors}{...}
@@ -135,7 +135,7 @@ metodo.campus@gmail.com{p_end}
 
 {p 4 6 2}
 Dom{c e'}nech JM. Generation of Random Sequences: User-written command rndseq for Stata [computer program].{break}
-V1.0.6. Bellaterra: Universitat Aut{c o'g}noma de Barcelona; 2022.{break}
+V1.0.7. Bellaterra: Universitat Aut{c o'g}noma de Barcelona; 2026.{break}
 Available from {browse "https://github.com/metodo-leam/stata"}{p_end}
 
 
