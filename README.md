@@ -17,8 +17,6 @@ The repository `stata` provides Stata user-written commands by the Laboratori d'
 | `dt` | Diagnostic Tests |
 | `dtroc` | ROC Analysis & Optimal Cutoff Point |
 | `intcon` | Internal Consistency |
-| `mar` | Meta-Analysis: OR,RR,RD,IR,ID,B,MD,R combined |
-| `nsize` | Sample Size & Power |
 | `pwkwallis` | Kruskal-Wallis equality-of-populations rank test & pairwise comparisons |
 | `rndseq` | Generation of Random Sequences |
 | `rtrend` | Trend test (2xk or kx2 table) for frequency and person-time data |
